@@ -1,0 +1,39 @@
+.calk {
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    height: 320px;
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 2%;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+
+    &__screen-container {
+        flex-grow: 1;
+        border-radius: 2%;
+        background-color: black;
+    }
+
+    &__screen {
+        width: 100%;
+        height: 100%;
+        background-color: inherit;
+        text-align: end;
+        font-size: 2.8rem;
+        border: 2px solid black;
+    }
+
+    &__btn-container {
+
+        flex-grow: 4;
+        display: grid;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 5px;
+
+    }
+}
